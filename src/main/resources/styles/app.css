@@ -1,0 +1,100 @@
+/* Global */
+@import url("fonts.css");
+
+.root {
+  -fx-font-family: 'Poppins', sans-serif;
+  -fx-background-color: #F5F5DC; /* Beige */
+  -fx-text-fill: #333333;
+}
+
+/* Labels */
+.label { -fx-text-fill: #4E342E; }
+.label-title   { -fx-font-size: 22px; -fx-font-weight: 700; -fx-text-fill: #E65100; }
+.label-section { -fx-font-size: 16px; -fx-font-weight: 600; -fx-text-fill: #FB8C00; }
+
+/* Cards */
+.card {
+  -fx-background-color: #FFFFFF;
+  -fx-background-radius: 14;
+  -fx-border-color: #E8E6E3;
+  -fx-border-radius: 14;
+  -fx-effect: dropshadow(gaussian, rgba(0,0,0,.08), 10, 0.14, 0, 2);
+  -fx-padding: 14;
+}
+
+/* Buttons (including nav) */
+.button, .nav-button {
+  -fx-background-color: #FB8C00; /* Orange */
+  -fx-text-fill: white;
+  -fx-font-weight: 600;
+  -fx-background-radius: 10;
+  -fx-padding: 8 14;
+  -fx-cursor: hand;
+}
+.button:hover, .nav-button:hover { -fx-background-color: #E65100; }
+
+/* Bottom nav */
+.bottom-nav {
+  -fx-background-color: #FFE0B2; /* light orange strip */
+  -fx-padding: 10;
+  -fx-spacing: 12;
+  -fx-alignment: center;
+  -fx-border-color: #E65100;
+  -fx-border-width: 1 0 0 0;
+}
+.nav-icon-active {
+  -fx-background-color: #E65100;
+  -fx-text-fill: white;
+  -fx-border-radius: 10;
+}
+
+/* Lists */
+.list-view {
+  -fx-background-color: transparent;
+  -fx-border-color: rgba(0,0,0,0.06);
+  -fx-border-radius: 10;
+}
+.list-cell {
+  -fx-background-color: transparent;
+  -fx-padding: 10 12;
+  -fx-font-size: 13px;
+}
+.list-cell:odd { -fx-background-color: rgba(0,0,0,0.015); }
+.list-cell:selected { -fx-background-color: rgba(251,140,0,0.18); -fx-text-fill: #4E342E; }
+
+/* Progress */
+.progress-bar { -fx-accent: #FB8C00; }
+.progress-bar > .track { -fx-background-color: #FFE0B2;  -fx-background-radius: 10; }
+.progress-bar > .bar   { -fx-background-radius: 10; }
+
+/* Food explorer rows hover */
+.food-cell-hover { -fx-background-color: rgba(251,140,0,0.08); }
+
+/* Right drawer polish */
+.drawer {
+  -fx-background-color: white;
+  -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.20), 22, 0.25, 0, 2);
+  -fx-border-color: #E8E6E3;
+  -fx-border-width: 0 0 0 1;
+}
+
+.recipes-grid .viewport { -fx-background-color: transparent; }
+.recipes-grid .scroll-bar:vertical { -fx-background-color: transparent; }
+.recipes-grid .scroll-bar .thumb { -fx-background-color: rgba(0,0,0,0.18); -fx-background-radius: 8; }
+
+/* Keep background white */
+.combo-box-popup .list-view {
+    -fx-background-color: white;
+}
+
+/* Only text highlight on hover */
+.combo-box-popup .list-view .list-cell:hover {
+    -fx-text-fill: #FF5722;    /* highlight text color (deep orange) */
+    -fx-font-weight: bold;     /* make text bold */
+}
+
+.list-view .scroll-bar {
+    -fx-opacity: 0;
+    -fx-max-width: 0;
+    -fx-max-height: 0;
+}
